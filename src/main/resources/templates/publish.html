@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>发布|Lyu's community</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <script type="application/javascript" src="js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="border-color: #efefef">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -38,15 +38,32 @@
             </ul>
         </div>
     </div>
-
-    <div class="container-fluid">
+</nav>
+    <div class="container-fluid" style="margin: 30px; background-color: white">
         <div class="row">
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="background-color: red">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label for="title">问题标题</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="请输入标题......">
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">问题描述</label>
+                        <textarea id="desc" name="desc" class="form-control" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="tag">问题标签</label>
+                        <input type="text" class="form-control" id="tag" name="tag" placeholder="添加标签，以，分隔">
+                    </div>
+                    <button type="submit" class="btn btn-success">发布</button>
+                </form>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="background-color: green">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <h3>社区规范...</h3>
             </div>
         </div>
     </div>
-</nav>
 </body>
 </html>
