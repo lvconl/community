@@ -43,15 +43,16 @@
         <div class="row">
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                 <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
+                <h3 th:text="${msg}"></h3>
                 <hr>
-                <form>
+                <form action="/addQuestion"  method="post">
                     <div class="form-group">
                         <label for="title">问题标题</label>
                         <input type="text" class="form-control" id="title" name="title" placeholder="请输入标题......">
                     </div>
                     <div class="form-group">
-                        <label for="desc">问题描述</label>
-                        <textarea id="desc" name="desc" class="form-control" cols="30" rows="10"></textarea>
+                        <label for="description">问题描述</label>
+                        <textarea id="description" name="description" class="form-control" cols="30" rows="10"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="tag">问题标签</label>

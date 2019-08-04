@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author lvconl
@@ -21,7 +20,7 @@ public class IndexController {
     UserMapper userMapper;
 
     @GetMapping("/")
-    public String index(HttpServletResponse response, HttpServletRequest request) {
+    public String index(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie: cookies) {
             if ("token".equals(cookie.getName())) {

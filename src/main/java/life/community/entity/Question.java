@@ -19,8 +19,6 @@ public class Question {
     public Question() {
     }
 
-    
-
     public Question(int id, String title, String description, Long gmtCreate, Long gmtModified, int creator, int commentCount, int viewCount, int likeCount, String tag) {
         this.id = id;
         this.title = title;
